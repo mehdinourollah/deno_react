@@ -29,7 +29,7 @@ const baseServer = async ({
     res.type("application/javascript").send(js);
   });
 
-  app.use("/", (req, res, next) => {
+  app.use("/api", (req, res, next) => {
     res.type("text/html").send(html);
   });
 
